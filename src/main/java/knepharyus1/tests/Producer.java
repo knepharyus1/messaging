@@ -64,7 +64,7 @@ public class Producer {
       int count = Integer.parseInt(arguments[0]);
       arguments = (String[]) ArrayUtils.remove(arguments, 0);
       for (String queue : arguments) {
-        for (int = 0; i < count; i++) {
+        for (int i = 0; i < count; i++) {
           handler.publishToQueue("Flooding queue " + queue + "... " + i, queue);
         }
       }
@@ -76,7 +76,7 @@ public class Producer {
       int delay = Integer.parseInt(arguments[0]);
       arguments = (String[]) ArrayUtils.remove(arguments, 0);
       for (String queue : arguments) {
-        for (int = 0; i < count; i++) {
+        for (int i = 0; i < count; i++) {
           handler.publishToQueue("Flooding queue " + queue + "... " + i, queue);
           Thread.sleep(delay * 100);
         }
